@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrayTime</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layer">
+        <div class="container">
+            <div class="pageData">
+
+                <div class="pageLocation">
+                    <button class="locationBtn" id="showLocationBtn"><img src="/data/location.svg" alt="Show Location"></button>
+                    <p>Your Current Location is : <samp id="locationDisplay" ></samp></p>
+
+                </div>
+
+                <div class="prayTimers">
+
+                    <input class="cityName" type="text" placeholder="Enter Your City">
+                    <button class="cityBtn">Submit</button>
+
+                </div>
+
+                <div class="pageTimer">
+                    <p  > Your Current Time is : <samp id="timeDisplay"> </samp> <samp id="timeDisplayLocation"></samp></p> 
+                    <p>The Time in <samp id="city2"></samp> , <samp id="country2"></samp> is <samp id="time2"></samp> </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <ol>
+                        <li><p>Fajr</p></li>
+                        <li><img src="/data/fajr.svg" alt="Fajr"></li>
+                        <li><li><p id="fajr">00:00</p></li></li>
+                    </ol>
+                </div>
+                <div class="box">
+                    <ol>
+                        <li><p>Dhuhr</p></li>
+                        <li><img src="/data/dhuhr.svg" alt="Dhuhr"></li>
+                        <li><li><p id="dhuhr">00:00</p></li></li>                    
+                    </ol>
+                </div>
+                <div class="box">
+                    <ol>
+                        <li><p>Asr</p></li>
+                        <li><img src="/data/asr.svg" alt="Asr"></li>
+                        <li><li><p id="asr">00:00</p></li></li>
+                    </ol>
+                </div>
+                <div class="box">
+                    <ol>
+                        <li><p>Maghrib</p></li>
+                        <li><img src="/data/maghrib.svg" alt="Maghrib"></li>
+                        <li><li><p id="maghrib">00:00</p></li></li>
+                    </ol>
+                </div>
+                <div class="box">
+                    <ol>
+                        <li><p>Isha</p></li>
+                        <li><img src="/data/isha.svg" alt="Isha"></li>
+                        <li><li><p id="isha">00:00</p></li></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- <div class="nextpraybox">
+                <ol class="nextbox">
+                    <li><p>The Next Pray is : </p></li>
+                    <li><img src="" alt=""></li>
+                    <li><li><p id="nextPray">00:00</p></li></li>
+                </ol>
+            </div> -->
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
